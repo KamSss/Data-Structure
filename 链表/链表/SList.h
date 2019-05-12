@@ -23,7 +23,10 @@ void SListInit(SList *SList);
 void SListDestroy(SList *SList);
 // 申请新结点
 Node * SListBuyNode(SLDataType value);
-
+//头插
+void SListPushFront(SList *SList, SLDataType value)
+// 尾插
+void SListPushBack(SList *SList, SLDataType value)
 
 
 
