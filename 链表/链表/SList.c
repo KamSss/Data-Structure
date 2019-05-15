@@ -104,6 +104,20 @@ void PrintList(SList *list){
 	printf("NULL\n");
 }
 
+// ²éÕÒº¯Êý
+int SListFind(SList *list, SLDataType target){
+	assert(list != NULL);
+	Node *cur = list->head;
+	int tmp = 0;
+	while (cur != NULL){
+		if (cur->value == target){
+			return tmp;
+		}
+		tmp++;
+		cur = cur->next;
+	}
+}
+
 
 
 

@@ -39,7 +39,7 @@ void PrintList(SList *list);
 // ÔÚposÎ»ÖÃ²åÈë
 void SListInPos(SList *list, SLDataType pos);
 // ËÑË÷
-void SListFind(SList *list, SLDataType target);
+int SListFind(SList *list, SLDataType target);
 
 
 
