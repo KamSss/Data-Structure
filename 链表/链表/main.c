@@ -15,6 +15,8 @@ void SListTest(){
 	PrintList(&list); // 1 2 3 4
 	SListPopFront(&list);
 	PrintList(&list); // 2 3 4
+	SListInPos(&list, 1, 0);
+	PrintList(&list);
 }
 
 int main(){

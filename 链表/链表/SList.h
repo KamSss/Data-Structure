@@ -37,7 +37,7 @@ void PrintList(SList *list);
 
 // 未通过
 // 在pos位置插入
-void SListInPos(SList *list, SLDataType pos);
+void SListInPos(SList *list, SLDataType value, int pos);
 // 搜索
 int SListFind(SList *list, SLDataType target);
 

@@ -118,6 +118,24 @@ int SListFind(SList *list, SLDataType target){
 	}
 }
 
+//ÔÚposÎ»ÖÃ²åÈë
+void SListInPos(SList *list, SLDataType value,int pos){
+	assert(list != NULL);
+
+	Node *cur1 = NULL;
+	pos = pos - 1;
+	Node *cur = list->head;
+	while (pos > 0 && cur->next != NULL){
+		pos--;
+		cur = cur->next;
+	}
+	if (cur->next != NULL){
+		cur1 = cur->next;
+	}
+	cur->next = SListBuyNode(value);
+	cur->next->next = cur1;
+}
+
 
 
 
