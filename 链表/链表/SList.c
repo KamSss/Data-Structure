@@ -118,12 +118,14 @@ int SListFind(SList *list, SLDataType target){
 	}
 }
 
-//在pos位置插入
+//在pos下标位置插入
 void SListInPos(SList *list, SLDataType value,int pos){
 	assert(list != NULL);
 
+	if (pos == 0){
+		SListPushFront(&list, value);
+	}
 	Node *cur1 = NULL;
-	pos = pos - 1;
 	Node *cur = list->head;
 	while (pos > 0 && cur->next != NULL){
 		pos--;
